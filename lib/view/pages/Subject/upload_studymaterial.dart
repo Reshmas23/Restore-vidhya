@@ -19,6 +19,7 @@ import 'package:uuid/uuid.dart';
 import '../../../view/colors/colors.dart';
 import '../../../view/widgets/button_container_widget.dart';
 
+// ignore: must_be_immutable
 class UploadStudyMaterial extends StatefulWidget {
   UploadStudyMaterial(
       {super.key,
@@ -38,6 +39,7 @@ class UploadStudyMaterial extends StatefulWidget {
 }
 
 class _UploadStudyMaterialState extends State<UploadStudyMaterial> {
+  // ignore: unused_field
   final String _selectedLeaveType = '';
   TextEditingController subjectNameController = TextEditingController();
   TextEditingController topicController = TextEditingController();

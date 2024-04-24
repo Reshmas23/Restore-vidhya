@@ -58,6 +58,7 @@ class AddExamTimeTableController extends GetxController {
   }
 
   String formatTimeWithoutPeriod(TimeOfDay timeOfDay) {
+    // ignore: unused_local_variable
     String period = timeOfDay.period == DayPeriod.am ? 'AM' : 'PM';
     int hour = timeOfDay.hourOfPeriod;
 

@@ -1,4 +1,3 @@
-import 'package:dujo_kerala_application/sruthi/Study%20Materials/study_materials_list.dart';
 import 'package:dujo_kerala_application/sruthi/homeWork/student_homework_list.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
 import 'package:dujo_kerala_application/view/constant/sizes/sizes.dart';
@@ -100,11 +99,11 @@ class TestingPage extends StatelessWidget {
 }
 
 class Containerwidget extends StatelessWidget {
-  Containerwidget({
+  const Containerwidget({
     required this.text,
     super.key,
   });
-  String text;
+ final String text;
   @override
   Widget build(BuildContext context) {
     return Container(

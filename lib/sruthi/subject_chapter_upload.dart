@@ -13,6 +13,7 @@ import 'package:uuid/uuid.dart';
 
 import '../controllers/userCredentials/user_credentials.dart';
 
+// ignore: must_be_immutable
 class ChapterUpoload extends StatelessWidget {
   ChapterUpoload({super.key, required this.subjectID});
 

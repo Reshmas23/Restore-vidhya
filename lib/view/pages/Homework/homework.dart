@@ -34,6 +34,7 @@ class HomeWorkUpload extends StatefulWidget {
 }
 
 class _HomeWorkUploadState extends State<HomeWorkUpload> {
+  // ignore: unused_field
   final TextEditingController _applyleaveDateController =
       TextEditingController();
   final TextEditingController _applyFromDateController =
@@ -85,6 +86,7 @@ class _HomeWorkUploadState extends State<HomeWorkUpload> {
     }
   }
 
+  // ignore: unused_field
   final String _selectedLeaveType = '';
   // late Animation animation, delayedAnimation, muchDelayedAnimation, LeftCurve;
   @override

@@ -9,8 +9,8 @@ import 'package:get/get.dart';
 import '../../widgets/fonts/google_monstre.dart';
 
 class SelectExamLevelScreen extends StatelessWidget {
-  String classId;
-  SelectExamLevelScreen({super.key, required this.classId});
+ final String classId;
+  const SelectExamLevelScreen({super.key, required this.classId});
 
   @override
   Widget build(BuildContext context) {

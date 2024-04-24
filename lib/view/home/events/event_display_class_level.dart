@@ -127,12 +127,12 @@ class EventDisplayClassLevel extends StatelessWidget {
 }
 
 class GooglePoppinseventClassLevelWidgets extends StatelessWidget {
-  String text;
-  double fontsize;
-  FontWeight? fontWeight;
-  Color? color;
-  VoidCallback? onTap;
-  GooglePoppinseventClassLevelWidgets({
+ final String text;
+ final double fontsize;
+ final FontWeight? fontWeight;
+ final Color? color;
+ final VoidCallback? onTap;
+  const GooglePoppinseventClassLevelWidgets({
     required this.text,
     required this.fontsize,
     this.fontWeight,

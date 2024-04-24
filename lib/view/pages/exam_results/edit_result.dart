@@ -13,11 +13,11 @@ import 'package:get/get.dart';
 import '../../../controllers/userCredentials/user_credentials.dart';
 
 class EditExamResultScreen extends StatelessWidget {
-  String examlevel;
-  String classID;
-  String examId;
-  String subjectID;
-  EditExamResultScreen({
+ final String examlevel;
+ final String classID;
+ final String examId;
+ final String subjectID;
+  const EditExamResultScreen({
     super.key,
     required this.classID,
     required this.examId,

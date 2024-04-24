@@ -11,11 +11,11 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../../model/teacher_model/progress_report_model/progress_report_model.dart';
 
 class ProgressReportListViewScreen extends StatelessWidget {
-  String schoolId;
-  String classID;
-  String studentId;
-  String batchId;
-  ProgressReportListViewScreen(
+ final String schoolId;
+ final String classID;
+ final String studentId;
+ final String batchId;
+  const ProgressReportListViewScreen(
       {required this.schoolId,
       required this.classID,
       required this.studentId,

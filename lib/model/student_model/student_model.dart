@@ -9,7 +9,7 @@ StudentModel studentModelFromJson(String str) =>
 
 String studentModelToJson(StudentModel data) => json.encode(data.toJson());
 
-class StudentModel {
+class   StudentModel {
   String admissionNumber;
   String alPhoneNumber;
   String bloodgroup;

@@ -57,6 +57,7 @@ class AttendenceBookScreenSelectMonth extends StatelessWidget {
                 children: List.generate(
                   snapshot.data!.docs.length,
                   (int index) {
+                    // ignore: unused_local_variable
                     final data = GetAttendenceModel.fromJson(
                         snapshot.data!.docs[index].data());
 

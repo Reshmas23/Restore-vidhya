@@ -98,6 +98,7 @@ class AddHomeWorsToFireBase {
       HomeWorksModel productModel, context, schoolid, classId, batchId) async {
     try {
       final firebase = FirebaseFirestore.instance;
+      // ignore: unused_local_variable
       final doc = firebase
           .collection("SchoolListCollection")
           .doc(schoolid)

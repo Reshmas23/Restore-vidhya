@@ -8,11 +8,11 @@ import 'package:get/get.dart';
 var allsubjectListValue;
 
 class GetAllSubjectListDropDownButton extends StatefulWidget {
-  String schoolID;
-  String batchId;
-  String classId;
+ final String schoolID;
+ final String batchId;
+ final String classId;
 
-  GetAllSubjectListDropDownButton(
+  const GetAllSubjectListDropDownButton(
       {required this.batchId,
       required this.classId,
       required this.schoolID,

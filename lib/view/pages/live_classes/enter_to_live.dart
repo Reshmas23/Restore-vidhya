@@ -311,6 +311,7 @@ class _LiveClassRoomState extends State<LiveClassRoom> {
 
   _joinMeeting() async {
     //String? serverUrl = serverText.text.trim().isEmpty ? null : serverText.text;
+    // ignore: unused_local_variable
     String serverUrl = "https://live.leptondujo.com/";
 
     Map<FeatureFlagEnum, dynamic> featureFlags = {

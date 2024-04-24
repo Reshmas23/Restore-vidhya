@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
-import '../widgets/drop_down.dart';
 import '../widgets/text_widget.dart';
 
 class Services {
@@ -15,11 +14,11 @@ class Services {
         backgroundColor: scaffoldBackgroundColors,
         context: context,
         builder: (context) {
-          return Padding(
-            padding: const EdgeInsets.all(18.0),
+          return const Padding(
+            padding: EdgeInsets.all(18.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Flexible(
                   child: TextWidget(
                     label: "Chosen Model:",

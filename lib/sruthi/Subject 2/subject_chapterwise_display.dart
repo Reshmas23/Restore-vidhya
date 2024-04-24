@@ -1,4 +1,3 @@
-import 'package:dujo_kerala_application/sruthi/Study%20Materials/study_materials_list.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
 import 'package:dujo_kerala_application/view/constant/sizes/sizes.dart';
 import 'package:dujo_kerala_application/view/widgets/fonts/google_poppins.dart';
@@ -96,10 +95,10 @@ class ListileCardChapterWidget extends StatelessWidget {
     super.key,
   });
 
-  Widget leading;
-  Widget title;
-  Widget subtitle;
-  Widget? trailing;
+ final Widget leading;
+ final Widget title;
+ final Widget subtitle;
+ final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {

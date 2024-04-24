@@ -8,8 +8,8 @@ import 'package:get/get.dart';
 var multipileStundentDOCIDValue;
 
 class GetSelectStundentforParentsDropDownButton extends StatefulWidget {
-  String parentDocID;
-  GetSelectStundentforParentsDropDownButton(
+ final String parentDocID;
+  const GetSelectStundentforParentsDropDownButton(
       {Key? key, required this.parentDocID})
       : super(key: key);
 

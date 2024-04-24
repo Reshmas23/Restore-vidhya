@@ -1,14 +1,9 @@
-import 'dart:math';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
 import 'package:dujo_kerala_application/view/constant/sizes/sizes.dart';
-import 'package:dujo_kerala_application/view/fonts/fonts.dart';
 import 'package:dujo_kerala_application/view/widgets/fonts/google_poppins.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../view/widgets/container_image.dart';
 import 'Subject 2/subject_chapterwise_display.dart';
 import 'widget/Heading_Container_Widget.dart';

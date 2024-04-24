@@ -156,16 +156,16 @@ class _ClassTeacherNewHomePageState extends State<ClassTeacherNewHomePage> {
                             fontWeight: FontWeight.bold,
                             color: cblack,
                           ),
-                                     FutureBuilder(
-                      future: FirebaseFirestore.instance
+                          StreamBuilder(
+                            stream:  FirebaseFirestore.instance
                           .collection('SchoolListCollection')
                           .doc(UserCredentialsController.schoolId)
                           .collection(UserCredentialsController.batchId!)
                           .doc(UserCredentialsController.batchId)
                           .collection('classes')
                           .doc(UserCredentialsController.classId)
-                          .get(),
-                      builder: (context, snaps) {
+                          .snapshots(),
+                            builder:  (context, snaps) {
                         if (snaps.hasData) {
                           return GoogleMonstserratWidgets(
                             text: 'Class : ${snaps.data!.data()!['className']}',
@@ -173,10 +173,38 @@ class _ClassTeacherNewHomePageState extends State<ClassTeacherNewHomePage> {
                             fontWeight: FontWeight.w500,
                             color: cblack.withOpacity(0.8),
                           );
-                        } else {
+                        } else if (snaps.hasError) {
+                          return GoogleMonstserratWidgets(
+                            text: 'Class : ',
+                            fontsize: 15.sp,
+                            fontWeight: FontWeight.w500,
+                            color: cblack.withOpacity(0.8),
+                          );
+                        }  else {
                           return const Text('');
                         }
                       }),
+                    //  FutureBuilder(
+                    //   future: FirebaseFirestore.instance
+                    //       .collection('SchoolListCollection')
+                    //       .doc(UserCredentialsController.schoolId)
+                    //       .collection(UserCredentialsController.batchId!)
+                    //       .doc(UserCredentialsController.batchId)
+                    //       .collection('classes')
+                    //       .doc(UserCredentialsController.classId)
+                    //       .get(),
+                    //   builder: (context, snaps) {
+                    //     if (snaps.hasData) {
+                    //       return GoogleMonstserratWidgets(
+                    //         text: 'Class : ${snaps.data!.data()!['className']}',
+                    //         fontsize: 15.sp,
+                    //         fontWeight: FontWeight.w500,
+                    //         color: cblack.withOpacity(0.8),
+                    //       );
+                    //     } else {
+                    //       return const Text('');
+                    //     }
+                    //   }),
                             GoogleMonstserratWidgets(
                               text:
                                   'ID : ${UserCredentialsController.teacherModel?.employeeID ?? " "}',
@@ -185,8 +213,7 @@ class _ClassTeacherNewHomePageState extends State<ClassTeacherNewHomePage> {
                               color: cblack.withOpacity(0.8),
                             ),
                              GoogleMonstserratWidgets(
-                    text:
-                        'email : ${UserCredentialsController.teacherModel?.teacherEmail ?? " "}',
+                    text:'email : ${UserCredentialsController.teacherModel?.teacherEmail ?? " "}',
                     fontsize: 12.sp,
                     fontWeight: FontWeight.w500,
                     color: cblack.withOpacity(0.7),

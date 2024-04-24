@@ -3,27 +3,23 @@
 import 'package:dujo_kerala_application/controllers/log_out/user_logout_controller.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
 import 'package:dujo_kerala_application/view/constant/sizes/sizes.dart';
-import 'package:dujo_kerala_application/view/home/class_teacher_HOme/class_teacher_mainhome.dart';
 import 'package:dujo_kerala_application/view/home/exam_Notification/teacher_adding/add_subject.dart';
 import 'package:dujo_kerala_application/view/home/teachers_home/teacher_main_home.dart';
 import 'package:dujo_kerala_application/view/pages/Homework/homework.dart';
-import 'package:dujo_kerala_application/widgets/drop_down/select_class_classteacher.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../controllers/userCredentials/user_credentials.dart';
-import '../../../helper/shared_pref_helper.dart';
 import '../../language/language_change_drawer.dart';
 import '../../pages/Attentence/select_period.dart';
 import '../../pages/privacy_policy/dialogs/privacy_policy.dart';
-import '../../pages/progress_Report/view_report/for_teachers/select_exam.dart';
 import '../general_instructions/general_instructions.dart';
 import '../student_home/time_table/ss.dart';
 
 class ClassTeacherHeaderDrawer extends StatelessWidget {
-  UserLogOutController userLogOutController = Get.put(UserLogOutController());
+ final UserLogOutController userLogOutController = Get.put(UserLogOutController());
   ClassTeacherHeaderDrawer({Key? key}) : super(key: key);
 
   @override
@@ -50,7 +46,7 @@ class ClassTeacherHeaderDrawer extends StatelessWidget {
             ),
           ),
           Text(
-            "Lepton VidyaVeechi",
+            "Lepton DuJo",
             style: GoogleFonts.montserrat(
                 color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),
           ),

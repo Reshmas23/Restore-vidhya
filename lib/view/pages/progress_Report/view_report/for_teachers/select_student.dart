@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
-import 'package:dujo_kerala_application/view/home/parent_home/progress_report/view_progress_card.dart';
 import 'package:dujo_kerala_application/view/pages/progress_Report/view_report/for_teachers/view_editProgressReprt.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -8,11 +7,11 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SelectStudentsListScreen extends StatelessWidget {
-  String schooilID;
-  String classID;
-  String examName;
-  String batchId;
-  SelectStudentsListScreen(
+ final String schooilID;
+ final String classID;
+ final String examName;
+ final String batchId;
+  const SelectStudentsListScreen(
       {required this.schooilID,
       required this.classID,
       required this.examName,

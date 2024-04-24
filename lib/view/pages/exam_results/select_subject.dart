@@ -8,11 +8,11 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SelectExamSubjectScreen extends StatelessWidget {
-  String examId;
-  String classID;
-  String examLevel;
+ final String examId;
+ final String classID;
+ final String examLevel;
 
-  SelectExamSubjectScreen({super.key, required this.classID,required this.examLevel, required this.examId});
+  const SelectExamSubjectScreen({super.key, required this.classID,required this.examLevel, required this.examId});
 
   @override
   Widget build(BuildContext context) {

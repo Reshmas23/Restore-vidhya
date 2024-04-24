@@ -8,7 +8,6 @@ import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 import 'package:get/get.dart';
 
 import '../../../sruthi/Subject 2/subject_chapterwise_display.dart';
-import '../recorded_videos/play_video.dart';
 
 class RecordedClassesShowsPage extends StatelessWidget {
   const RecordedClassesShowsPage(

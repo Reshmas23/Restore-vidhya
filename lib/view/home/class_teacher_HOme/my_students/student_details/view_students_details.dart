@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 import 'package:get/get.dart';
 
+// ignore: must_be_immutable
 class ViewStudentsDetails extends StatefulWidget {
   ViewStudentsDetails({super.key, required this.studentDetail});
 

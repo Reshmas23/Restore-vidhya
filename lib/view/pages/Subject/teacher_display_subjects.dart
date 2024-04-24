@@ -15,7 +15,7 @@ import '../../../../view/widgets/container_image.dart';
 import '../../../widgets/Iconbackbutton.dart';
 
 class TeacherSubjectHome extends StatelessWidget {
-  TeacherSubjectController teacherSubjectController =
+ final TeacherSubjectController teacherSubjectController =
       Get.put(TeacherSubjectController());
   TeacherSubjectHome({super.key});
 

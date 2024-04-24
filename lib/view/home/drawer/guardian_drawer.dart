@@ -3,10 +3,7 @@
 import 'package:dujo_kerala_application/controllers/userCredentials/user_credentials.dart';
 import 'package:dujo_kerala_application/view/constant/sizes/sizes.dart';
 import 'package:dujo_kerala_application/view/home/exam_Notification/users_exam_list_view/user_exam_acc.dart';
-import 'package:dujo_kerala_application/view/home/parent_home/progress_report/progress_report.dart';
-import 'package:dujo_kerala_application/view/home/student_home/time_table/time_table_display.dart';
 import 'package:dujo_kerala_application/view/pages/Homework/view_home_work.dart';
-import 'package:dujo_kerala_application/view/pages/Notice/notice_list.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
@@ -46,7 +43,7 @@ class GuardianHeaderDrawer extends StatelessWidget {
             ),
           ),
           Text(
-            "Lepton VidyaVeechi",
+            "Lepton DuJo",
             style: GoogleFonts.montserrat(
                 color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),
           ),

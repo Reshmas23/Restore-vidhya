@@ -14,6 +14,7 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
   double _uploadProgress = 0.0;
 
   Future<void> _uploadImage() async {
+    // ignore: unnecessary_null_comparison
     if (_image == null) {
       return;
     }
@@ -55,12 +56,13 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Image Upload'),
+        title: const Text('Image Upload'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // ignore: unnecessary_null_comparison
             if (_image != null)
               Image.file(
                 _image,
@@ -68,14 +70,14 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
               ),
             ElevatedButton(
               onPressed: _getImageFromGallery,
-              child: Text('Choose Image'),
+              child: const Text('Choose Image'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _uploadImage,
-              child: Text('Upload Image'),
+              child: const Text('Upload Image'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             LinearProgressIndicator(value: _uploadProgress),
             Text('${(_uploadProgress * 100).toStringAsFixed(2)}%'),
           ],

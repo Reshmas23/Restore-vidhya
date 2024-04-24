@@ -5,7 +5,6 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
 
 GetAttendenceModel GetAttendenceModelFromJson(String str) =>
     GetAttendenceModel.fromJson(json.decode(str));
@@ -47,6 +46,7 @@ class AddAttendenceStatusToFireBase {
       schoolid, classId, formatter, studentName, status) async {
     try {
       final firebase = FirebaseFirestore.instance;
+      // ignore: unused_local_variable
       final doc = firebase
           .collection("SchoolListCollection")
           .doc(schoolid)

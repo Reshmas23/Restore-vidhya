@@ -1,6 +1,5 @@
 import 'package:dujo_kerala_application/view/colors/colors.dart';
 import 'package:dujo_kerala_application/view/home/teachers_home/teacher_home.dart';
-import 'package:dujo_kerala_application/view/widgets/container_image.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 import 'package:get/get_utils/src/extensions/export.dart';
@@ -60,8 +59,8 @@ class _TeacherMainHomeScreenState extends State<TeacherMainHomeScreen> {
               width: 115.w,
               child: Center(
                   child: Image.asset(
-                'assets/images/vidyaveechi.png',
-                color: Colors.white,
+                'assets/images/dujoo-removebg.png',
+              //  color: Colors.white,
                 fit: BoxFit.cover,
               )),
             ),

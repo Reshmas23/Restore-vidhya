@@ -11,7 +11,7 @@ import '../../view/constant/sizes/sizes.dart';
 import '../../view/widgets/fonts/google_poppins.dart';
 
 class HomeWorkList extends StatelessWidget {
-  TeacherSubjectController teacherSubjectController =
+ final TeacherSubjectController teacherSubjectController =
       Get.put(TeacherSubjectController());
   HomeWorkList({super.key});
 

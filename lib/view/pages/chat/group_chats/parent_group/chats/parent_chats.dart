@@ -12,10 +12,10 @@ import '../../group_chat.dart';
 import 'chats_appBar.dart';
 
 class ParentsGroupChats extends StatefulWidget {
-  String groupName;
-  String groupId;
+ final String groupName;
+ final String groupId;
 
-  ParentsGroupChats(
+  const ParentsGroupChats(
       {required this.groupId, required this.groupName, super.key});
 
   @override

@@ -121,6 +121,7 @@ class NoticeClassDisplayPage extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class GooglePoppinsWidgetsNotice extends StatelessWidget {
   String text;
   double fontsize;

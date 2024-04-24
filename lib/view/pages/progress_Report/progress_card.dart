@@ -14,18 +14,18 @@ import '../../../model/teacher_model/progress_report_model/progress_report_model
 import '../../widgets/button_container_widget.dart';
 
 class StudentProgressReportScreen extends StatefulWidget {
-  String schooilID;
-  String classID;
-  String studentImage;
-  String studentName;
-  String rollNo;
-  String dob;
-  String examName;
-  String studentId;
-  String teacherid;
-  String batchId;
+ final String schooilID;
+ final String classID;
+ final String studentImage;
+ final String studentName;
+ final String rollNo;
+ final String dob;
+ final String examName;
+ final String studentId;
+ final String teacherid;
+ final String batchId;
 
-  StudentProgressReportScreen(
+  const StudentProgressReportScreen(
       {required this.schooilID,
       required this.classID,
       required this.studentImage,

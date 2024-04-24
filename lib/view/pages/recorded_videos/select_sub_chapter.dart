@@ -11,11 +11,11 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../colors/colors.dart';
 
 class RecSelectChapterScreen extends StatelessWidget {
-  String schoolId;
-  String classID;
-  String batchId;
-  String subjectId;
-  RecSelectChapterScreen(
+ final String schoolId;
+ final String classID;
+ final String batchId;
+ final String subjectId;
+  const RecSelectChapterScreen(
       {required this.schoolId,
       required this.batchId,
       required this.classID,

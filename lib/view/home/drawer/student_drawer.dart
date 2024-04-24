@@ -4,7 +4,6 @@ import 'package:dujo_kerala_application/controllers/userCredentials/user_credent
 import 'package:dujo_kerala_application/view/constant/sizes/sizes.dart';
 import 'package:dujo_kerala_application/view/home/exam_Notification/users_exam_list_view/user_exam_acc.dart';
 import 'package:dujo_kerala_application/view/home/general_instructions/general_instructions.dart';
-import 'package:dujo_kerala_application/view/home/parent_home/progress_report/progress_report.dart';
 import 'package:dujo_kerala_application/view/home/student_home/time_table/ss.dart';
 import 'package:dujo_kerala_application/view/pages/Homework/view_home_work.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -17,7 +16,6 @@ import '../../../utils/utils.dart';
 import '../../language/language_change_drawer.dart';
 import '../../pages/Attentence/take_attentence/attendence_book_status_month.dart';
 import '../../pages/privacy_policy/dialogs/privacy_policy.dart';
-import '../all_class_test_show/all_class_list_show.dart';
 
 class StudentsHeaderDrawer extends StatelessWidget {
   const StudentsHeaderDrawer({Key? key}) : super(key: key);
@@ -47,7 +45,7 @@ class StudentsHeaderDrawer extends StatelessWidget {
             ),
           ),
           Text(
-            "Lepton VidyaVeechi",
+            "Lepton DuJo",
             style: GoogleFonts.montserrat(
                 color: Colors.black,
                 fontSize: 25.h,

@@ -3,10 +3,10 @@ import 'package:dujo_kerala_application/view/widgets/fonts/google_poppins.dart';
 import 'package:flutter/material.dart';
 
 class WidgetContainerOnHome extends StatelessWidget {
-  String title;
-  String body;
-  String imagePath;
-  WidgetContainerOnHome({
+ final String title;
+ final String body;
+ final String imagePath;
+  const WidgetContainerOnHome({
     required this.body,
     required this.imagePath,
     required this.title,

@@ -219,6 +219,7 @@ class _ParentProfileHomePageState extends State<ParentProfileHomePage> {
     multipileStudentsController.checkalreadyexist(
         FirebaseAuth.instance.currentUser!.uid, parentAuth);
 
+    // ignore: unused_local_variable
     String studentName = '';
 
     var screenSize = MediaQuery.of(context).size;
@@ -250,121 +251,111 @@ class _ParentProfileHomePageState extends State<ParentProfileHomePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 20),
-                        child: Text(
-                          "Welcome...",
-                          style: GoogleFonts.abel(
-                              fontSize: 12, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10),
-                        child: GestureDetector(
-                          onTap: () {
-                            log(UserCredentialsController
-                                .parentModel!.studentID!);
-                          },
-                          child: SizedBox(
-                            width: screenSize.width / 2,
-                            child: GoogleMonstserratWidgets(
-                              overflow: TextOverflow.ellipsis,
-                              text: UserCredentialsController
-                                  .parentModel!.parentName!,
-                              fontsize: 23.sp,
-                              fontWeight: FontWeight.bold,
-                              color: cblack,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Text(
+                              "Welcome...",
+                              style: GoogleFonts.abel(
+                                  fontSize: 12, fontWeight: FontWeight.bold),
                             ),
                           ),
-                        ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: GestureDetector(
+                              onTap: () {
+                                log(UserCredentialsController
+                                    .parentModel!.studentID!);
+                              },
+                              child: SizedBox(
+                                width: screenSize.width / 2,
+                                child: GoogleMonstserratWidgets(
+                                  overflow: TextOverflow.ellipsis,
+                                  text: UserCredentialsController
+                                      .parentModel!.parentName!,
+                                  fontsize: 23.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: cblack,
+                                ),
+                              ),
+                            ),
+                          ),
+                      
+                          // Padding(
+                          //   padding:
+                          //       EdgeInsets.only(left: screenSize.width / 1.4, top: 30),
+                          //   child: const CircleAvatar(
+                          //     maxRadius: 40,
+                          //     backgroundImage: AssetImage('assets/images/IOT.jpg'),
+                          //   ),
+                          // ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: FutureBuilder(
+                                future: FirebaseFirestore.instance
+                                    .collection("SchoolListCollection")
+                                    .doc(UserCredentialsController.schoolId)
+                                    .collection("AllStudents")
+                                    .doc(UserCredentialsController
+                                            .parentModel?.studentID ??
+                                        '')
+                                    .get(),
+                                builder: (context, snap) {
+                                  if (snap.hasData) {
+                                    return GoogleMonstserratWidgets(
+                                      text:
+                                          'Student : ${snap.data?.data()?['studentName']}',
+                                      fontsize: 14.5.sp,
+                                      fontWeight: FontWeight.w500,
+                                      color: cblack.withOpacity(0.8),
+                                    );
+                                  } else {
+                                    return const Text('');
+                                  }
+                                }),
+                          ),
+                      
+                          Padding(
+                            padding: const EdgeInsets.only(top: 2),
+                            child: FutureBuilder(
+                                future: FirebaseFirestore.instance
+                                    .collection('SchoolListCollection')
+                                    .doc(UserCredentialsController.schoolId)
+                                    .collection(UserCredentialsController.batchId!)
+                                    .doc(UserCredentialsController.batchId)
+                                    .collection('classes')
+                                    .doc(UserCredentialsController.classId)
+                                    .get(),
+                                builder: (context, snaps) {
+                                  if (snaps.hasData) {
+                                    return GoogleMonstserratWidgets(
+                                      text:
+                                          'Class : ${snaps.data?.data()?['className']}',
+                                      fontsize: 13.sp,
+                                      fontWeight: FontWeight.w500,
+                                      color: cblack.withOpacity(0.8),
+                                    );
+                                  } else {
+                                    return const Text('');
+                                  }
+                                }),
+                          ),
+                          GoogleMonstserratWidgets(
+                            text:
+                                'email : ${UserCredentialsController.parentModel?.parentEmail ?? ""}',
+                            fontsize: 12.sp,
+                            fontWeight: FontWeight.w500,
+                            color: cblack.withOpacity(0.7),
+                          ),
+                        ],
                       ),
-
-                      // Padding(
-                      //   padding:
-                      //       EdgeInsets.only(left: screenSize.width / 1.4, top: 30),
-                      //   child: const CircleAvatar(
-                      //     maxRadius: 40,
-                      //     backgroundImage: AssetImage('assets/images/IOT.jpg'),
-                      //   ),
-                      // ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 10),
-                        child: FutureBuilder(
-                            future: FirebaseFirestore.instance
-                                .collection("SchoolListCollection")
-                                .doc(UserCredentialsController.schoolId)
-                                .collection("AllStudents")
-                                .doc(UserCredentialsController
-                                        .parentModel?.studentID ??
-                                    '')
-                                .get(),
-                            builder: (context, snap) {
-                              if (snap.hasData) {
-                                return GoogleMonstserratWidgets(
-                                  text:
-                                      'Student : ${snap.data?.data()?['studentName']}',
-                                  fontsize: 14.5.sp,
-                                  fontWeight: FontWeight.w500,
-                                  color: cblack.withOpacity(0.8),
-                                );
-                              } else {
-                                return const Text('');
-                              }
-                            }),
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsets.only(top: 2),
-                        child: FutureBuilder(
-                            future: FirebaseFirestore.instance
-                                .collection('SchoolListCollection')
-                                .doc(UserCredentialsController.schoolId)
-                                .collection(UserCredentialsController.batchId!)
-                                .doc(UserCredentialsController.batchId)
-                                .collection('classes')
-                                .doc(UserCredentialsController.classId)
-                                .get(),
-                            builder: (context, snaps) {
-                              if (snaps.hasData) {
-                                return GoogleMonstserratWidgets(
-                                  text:
-                                      'Class : ${snaps.data?.data()?['className']}',
-                                  fontsize: 13.sp,
-                                  fontWeight: FontWeight.w500,
-                                  color: cblack.withOpacity(0.8),
-                                );
-                              } else {
-                                return const Text('');
-                              }
-                            }),
-                      ),
-                      GoogleMonstserratWidgets(
-                        text:
-                            'email : ${UserCredentialsController.parentModel?.parentEmail ?? ""}',
-                        fontsize: 12.sp,
-                        fontWeight: FontWeight.w500,
-                        color: cblack.withOpacity(0.7),
-                      ),
-                    ],
-                  ),
-                ),
-                // Padding(
-                //   padding: const EdgeInsets.only(left: 40, top: 110),
-                //   child: Container(
-                //     height: 120,
-                //     width: 150,
-                //     decoration: const BoxDecoration(
-                //         image: DecorationImage(
-                //             image: AssetImage('assets/images/company.jpg'))),
-                //   ),
-                // ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 80, top: 180),
+                      padding: const EdgeInsets.only( top: 10,right: 10),
                       child: GestureDetector(
                         onTap: () {
                             Get.to(() => ParentEditProfileScreen());
@@ -385,15 +376,79 @@ class _ParentProfileHomePageState extends State<ParentProfileHomePage> {
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 30, top: 180),
-                      child: CircleAvatar(
-                        maxRadius: 40,
-                        backgroundImage: AssetImage('assets/images/AI.jpg'),
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
+                // Padding(
+                //   padding: const EdgeInsets.only(left: 40, top: 110),
+                //   child: Container(
+                //     height: 120,
+                //     width: 150,
+                //     decoration: const BoxDecoration(
+                //         image: DecorationImage(
+                //             image: AssetImage('assets/images/company.jpg'))),
+                //   ),
+                // ),
+               
+                    // Padding(
+                    //   padding: const EdgeInsets.only( top: 180,right: 40),
+                    //   child: GestureDetector(
+                    //     onTap: () {
+                    //         Get.to(() => ParentEditProfileScreen());
+                    //       },
+                    //     child: CircleAvatar(
+                    //       maxRadius: 40,
+                    //       backgroundImage: NetworkImage(UserCredentialsController
+                    //               .parentModel!.profileImageURL ??
+                    //           ''),
+                    //       child: const Padding(
+                    //         padding: EdgeInsets.only(top: 55,left: 50),
+                    //         child: CircleAvatar(
+                    //           //  backgroundColor: cWhite,
+                    //           radius: 12,
+                    //           child: Center(child: Icon(Icons.info)),
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
+                    //  Padding(
+                    //   padding: EdgeInsets.only(left: 30, top: 180),
+                    //   child: FutureBuilder(
+                    //         future: FirebaseFirestore.instance
+                    //             .collection("SchoolListCollection")
+                    //             .doc(UserCredentialsController.schoolId)
+                    //             .collection("AllStudents")
+                    //             .doc(UserCredentialsController
+                    //                     .parentModel?.studentID ??
+                    //                 '')
+                    //             .get(),
+                    //         builder: (context, snap) {
+                    //           if (snap.hasData) {
+                    //             return CircleAvatar(
+                    //       maxRadius: 40,
+                    //       backgroundImage: NetworkImage(UserCredentialsController
+                    //               .studentModel!.profileImageUrl));
+                    //           } else if(snap.hasError) {
+                    //             return const 
+                    //               CircleAvatar(
+                    //     maxRadius: 40,
+                    //     backgroundImage: AssetImage('assets/images/student (1).png'),
+                    //   );
+                    //           }else {
+                    //             return const 
+                    //               CircleAvatar(
+                    //     maxRadius: 40,
+                    //     backgroundImage: AssetImage('assets/images/student (1).png'),
+                    //   );
+                    //           }
+                    //         }),
+                    //   //  CircleAvatar(
+                    //   //   maxRadius: 40,
+                    //   //   backgroundImage: AssetImage('assets/images/AI.jpg'),
+                    //   // ),
+                    // ),
+                 
               ],
             ),/////////////////////////////////////
             const Padding(

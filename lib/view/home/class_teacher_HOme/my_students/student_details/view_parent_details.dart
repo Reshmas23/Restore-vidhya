@@ -7,6 +7,7 @@ import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 
 import '../../../../../widgets/Iconbackbutton.dart';
 
+// ignore: must_be_immutable
 class ViewParentDetails extends StatefulWidget {
   ViewParentDetails(
       {super.key, required this.documentSnapshot, required this.studentID});

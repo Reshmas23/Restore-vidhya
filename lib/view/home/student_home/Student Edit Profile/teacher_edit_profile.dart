@@ -140,6 +140,7 @@ class TeacherEditProfileScreen extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class TeacherEditListileWidget extends StatelessWidget {
   final Widget title;
   final Widget subtitle;
@@ -147,7 +148,7 @@ class TeacherEditListileWidget extends StatelessWidget {
   final IconData? editicon;
   final _formKey = GlobalKey<FormState>();
   String newEmail = "";
-  TeacherProfileController teacherProfileEditController =
+ final TeacherProfileController teacherProfileEditController =
       Get.put(TeacherProfileController());
 
   TeacherEditListileWidget({

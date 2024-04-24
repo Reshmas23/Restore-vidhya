@@ -201,16 +201,16 @@ class PopUpContainer extends StatelessWidget {
 }
 
 class PopUpcontainerWidget extends StatelessWidget {
-  PopUpcontainerWidget({
+  const PopUpcontainerWidget({
     required this.text,
     required this.text1,
     required this.text2,
     super.key,
   });
 
-  String text;
-  String text1;
-  String text2;
+ final String text;
+ final String text1;
+ final String text2;
 
   @override
   Widget build(BuildContext context) {

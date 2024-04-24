@@ -87,7 +87,7 @@ class SubjectWiseDisplay extends StatelessWidget {
 }
 
 class ListileCardChapterWidget extends StatelessWidget {
-  ListileCardChapterWidget({
+  const ListileCardChapterWidget({
     required this.leading,
     required this.title,
     required this.subtitle,
@@ -95,10 +95,10 @@ class ListileCardChapterWidget extends StatelessWidget {
     super.key,
   });
 
-  Widget leading;
-  Widget title;
-  Widget subtitle;
-  Widget? trailing;
+ final Widget leading;
+ final Widget title;
+ final Widget subtitle;
+ final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {

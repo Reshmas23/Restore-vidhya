@@ -12,10 +12,10 @@ import '../../../../../../controllers/group_chat_controller/studentchat_controll
 import '../../../group_chats/group_chat.dart';
 
 class StudenstGroupChatsScreen extends StatefulWidget {
-  String groupID;
-  String groupName;
+ final String groupID;
+ final String groupName;
 
-  StudenstGroupChatsScreen(
+  const StudenstGroupChatsScreen(
       {required this.groupID, required this.groupName, super.key});
 
   @override

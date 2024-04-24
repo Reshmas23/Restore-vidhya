@@ -4,7 +4,6 @@ import 'package:dujo_kerala_application/controllers/userCredentials/user_credent
 import 'package:dujo_kerala_application/view/home/class_teacher_HOme/leave_letters/leave_lettersList.dart';
 import 'package:dujo_kerala_application/view/home/class_teacher_HOme/my_students/my_students.dart';
 import 'package:dujo_kerala_application/view/home/student_home/time_table/ss.dart';
-import 'package:dujo_kerala_application/view/pages/progress_Report/create_examName_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
@@ -24,8 +23,8 @@ import '../events/event_list.dart';
 import '../exam_Notification/teacher_adding/add_subject.dart';
 
 class ClassTeacherAccessories extends StatelessWidget {
-  String classID;
-  ClassTeacherAccessories({
+ final String classID;
+  const ClassTeacherAccessories({
     required this.classID,
     super.key,
   });

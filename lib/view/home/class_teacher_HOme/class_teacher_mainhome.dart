@@ -1,7 +1,6 @@
 import 'package:dujo_kerala_application/controllers/log_out/user_logout_controller.dart';
 import 'package:dujo_kerala_application/main.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
-import 'package:dujo_kerala_application/view/home/class_teacher_HOme/class_teacher_home.dart';
 import 'package:dujo_kerala_application/view/home/class_teacher_HOme/class_teacher_new_home.dart';
 import 'package:dujo_kerala_application/view/pages/live_classes/teacher_live_section/create_room.dart';
 import 'package:flutter/material.dart';
@@ -68,8 +67,8 @@ class _ClassTeacherMainHomeScreenState
               width: 115.w,
               child: Center(
                   child: Image.asset(
-                'assets/images/vidyaveechi.png',
-                color: Colors.white,
+                'assets/images/dujoo-removebg.png',
+              //  color: Colors.white,
                 fit: BoxFit.cover,
               )),
             ),

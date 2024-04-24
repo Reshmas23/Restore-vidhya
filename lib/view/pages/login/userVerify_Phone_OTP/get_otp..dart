@@ -71,9 +71,7 @@ class UserSentOTPScreen extends StatelessWidget {
                     return ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30)),
-                            // ignore: deprecated_member_use
-                            primary: Colors.green.shade600),
+                                borderRadius: BorderRadius.circular(30)), backgroundColor: Colors.green.shade600),
                         onPressed: () async {
                           BlocProvider.of<AuthCubit>(context)
                               .sentOTP(phoneNumber);

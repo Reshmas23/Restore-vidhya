@@ -26,7 +26,18 @@ class ParentEditProfileScreen extends StatelessWidget {
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(12.h),
               bottomRight: Radius.circular(12.h)),
-          color: adminePrimayColor,
+         gradient: const LinearGradient(
+                      colors: [
+                         Color.fromARGB(255, 130, 192, 243),
+                            Color.fromARGB(153, 241, 240, 240),
+                            Color.fromARGB(255, 149, 226, 236),
+                            Color.fromARGB(99, 214, 212, 212),
+                            Color.fromARGB(255, 139, 233, 223)
+                      ],
+                      end: Alignment.topLeft,
+                      begin: Alignment.bottomRight,
+                    ),
+                    
         ),
         child: Column(children: [
           // Row(
@@ -257,7 +268,7 @@ class CircleAvatharImageSelectionWidgetParent extends StatelessWidget {
                   alignment: Alignment.bottomRight,
                   child: CircleAvatar(
                     radius: 20,
-                    backgroundColor: Color.fromARGB(255, 52, 50, 50),
+                    backgroundColor: cWhite,
                     child: Icon(Icons.edit),
                   ),
                 ),

@@ -1,6 +1,5 @@
 // ignore_for_file: non_constant_identifier_names, duplicate_ignore, empty_catches, unused_element
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dujo_kerala_application/controllers/sign_in_controller/parent_login_controller.dart';
 import 'package:dujo_kerala_application/controllers/userCredentials/user_credentials.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
@@ -23,9 +22,9 @@ import '../../pages/privacy_policy/dialogs/privacy_policy.dart';
 import '../student_home/time_table/ss.dart';
 
 class ParentHeaderDrawer extends StatelessWidget {
-  MultipileStudentsController multipileStudentsController =
+ final MultipileStudentsController multipileStudentsController =
       Get.put(MultipileStudentsController());
-  ParentLoginController parentLoginController =
+ final ParentLoginController parentLoginController =
       Get.put(ParentLoginController());
   ParentHeaderDrawer({Key? key}) : super(key: key);
 
@@ -53,7 +52,7 @@ class ParentHeaderDrawer extends StatelessWidget {
             ),
           ),
           Text(
-            "Lepton VidyaVeechi",
+            "Lepton DuJo",
             style: GoogleFonts.montserrat(
                 color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),
           ),

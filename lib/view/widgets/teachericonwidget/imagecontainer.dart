@@ -20,29 +20,19 @@ class ImageContainer extends StatelessWidget {
       padding: const EdgeInsets.all(4.0),
       child: GestureDetector(
         //onTap: onTap,
-        child: SizedBox(
-          width: 105.w, //110
-          height: 100.h,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 80.h,
-                width: 80.w,
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border:
-                        Border.all(color: adminePrimayColor.withOpacity(0.5))),
-                child: Center(
-                  child: Image.asset(height: 50,
-                    image,
-                    fit: BoxFit.contain,
-                    scale: 2,
-                  ),
-                ),
-              ),
-             
-            ],
+        child: Container(
+          height: 80.h,
+          width: 80.w,
+          decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border:
+                  Border.all(color: adminePrimayColor.withOpacity(0.5))),
+          child: Center(
+            child: Image.asset(height: 40,
+              image,
+              fit: BoxFit.contain,
+              scale: 2,
+            ),
           ),
         ),
       ),

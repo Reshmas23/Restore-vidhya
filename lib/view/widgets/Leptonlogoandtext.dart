@@ -21,7 +21,7 @@ class leptonDujoWidget extends StatelessWidget {
             width: 60.w,
             imagePath: 'assets/images/leptonlogo.png'),
         GooglePoppinsWidgets(
-          text: "Lepton VidyaVeechi",
+          text: "Lepton DuJo",
           fontsize: 15,
           color: cred,
           fontWeight: FontWeight.w600,

@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../../../../../controllers/student_controller/profile_edit_controllers/parent_profile_edit_controller.dart';
 import '../../../../widgets/fonts/google_poppins.dart';
 
+// ignore: must_be_immutable
 class ParentEditListileWidget extends StatelessWidget {
   final String title;
   final String subtitle;
@@ -12,7 +13,7 @@ class ParentEditListileWidget extends StatelessWidget {
   final IconData? editicon;
   final VoidCallback voidCallback;
   String newEmail = "";
-  ParentProfileEditController parentProfileEditController =
+ final ParentProfileEditController parentProfileEditController =
       Get.put(ParentProfileEditController());
 
   ParentEditListileWidget({

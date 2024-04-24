@@ -119,6 +119,7 @@ class GuardianEditProfileScreen extends StatelessWidget {
   // }
 }
 
+// ignore: must_be_immutable
 class GuardianEditListileWidget extends StatelessWidget {
   final Widget title;
   final Widget subtitle;
@@ -126,7 +127,7 @@ class GuardianEditListileWidget extends StatelessWidget {
   final IconData? editicon;
   final _formKey = GlobalKey<FormState>();
   String newEmail = "";
-  GuardianProfileController guardianProfileEditController =
+ final GuardianProfileController guardianProfileEditController =
       Get.put(GuardianProfileController());
 
   GuardianEditListileWidget({

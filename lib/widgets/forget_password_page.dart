@@ -14,6 +14,7 @@ class ForgotPasswordScreen extends StatefulWidget {
 class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
+  // ignore: unused_field
   final FirebaseAuth _auth = FirebaseAuth.instance;
   bool isLoading = false;
 

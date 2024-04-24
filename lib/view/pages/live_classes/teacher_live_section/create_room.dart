@@ -14,7 +14,7 @@ import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 import 'package:get/get.dart';
 
 class CreateRoomScreen extends StatefulWidget {
-  LiveRoomController liveRoomController = Get.put(LiveRoomController());
+ final LiveRoomController liveRoomController = Get.put(LiveRoomController());
   CreateRoomScreen({super.key});
 
   @override

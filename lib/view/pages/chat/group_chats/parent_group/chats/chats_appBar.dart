@@ -22,11 +22,11 @@ showParentsGroupAppBar(
 }
 
 class BootomSheet extends StatelessWidget {
-  TeacherParentGroupChatController teacherParentGroupChatController =
+ final TeacherParentGroupChatController teacherParentGroupChatController =
       Get.put(TeacherParentGroupChatController());
-  String groupName;
-  String totalParents;
-  String groupID;
+ final String groupName;
+ final String totalParents;
+ final String groupID;
   BootomSheet(
       {required this.groupID,
       required this.groupName,

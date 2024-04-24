@@ -9,18 +9,18 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 
 class LeaveLettersScreen extends StatefulWidget {
-  String schoolplaceName;
-  String schoolName;
-  String id;
-  String applyLeaveDate;
-  String leaveResontype;
-  String leaveFromDate;
-  String leaveToDate;
-  String leaveReason;
-  String studentName;
-  String studentParent;
+ final String schoolplaceName;
+ final String schoolName;
+ final String id;
+ final String applyLeaveDate;
+ final String leaveResontype;
+ final String leaveFromDate;
+ final String leaveToDate;
+ final String leaveReason;
+ final String studentName;
+ final String studentParent;
 
-  LeaveLettersScreen(
+  const LeaveLettersScreen(
       {required this.id,
       required this.schoolplaceName,
       required this.schoolName,

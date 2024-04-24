@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../../../../controllers/student_controller/profile_edit_controllers/parent_profile_edit_controller.dart';
 import '../../../../constant/sizes/constant.dart';
 
+// ignore: must_be_immutable
 class ParentEditListileWidgetEmail extends StatelessWidget {
   final Widget title;
   final Widget subtitle;
@@ -11,7 +12,7 @@ class ParentEditListileWidgetEmail extends StatelessWidget {
   final IconData? editicon;
   final _formKey = GlobalKey<FormState>();
   String newEmail = "";
-  ParentProfileEditController parentProfileEditController =
+ final ParentProfileEditController parentProfileEditController =
       Get.put(ParentProfileEditController());
 
   ParentEditListileWidgetEmail({

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ShowStudentAchievements extends StatefulWidget {
-  ShowStudentAchievements({super.key, required this.studentID});
+  const ShowStudentAchievements({super.key, required this.studentID});
 
-  String studentID;
+ final String studentID;
 
   @override
   State<ShowStudentAchievements> createState() => _ShowStudentAchievementsState();
@@ -18,7 +18,7 @@ class ShowStudentAchievements extends StatefulWidget {
 class _ShowStudentAchievementsState extends State<ShowStudentAchievements> {
   @override
   Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
+  //  var screenSize = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
           appBar: AppBar(

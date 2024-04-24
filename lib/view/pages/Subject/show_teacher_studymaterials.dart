@@ -11,10 +11,10 @@ import '../../../sruthi/Subject 2/subject_chapterwise_display.dart';
 import '../pdf_viewer/pdf_viewer.dart';
 
 class StudyMaterials extends StatelessWidget {
-  StudyMaterials({super.key, required this.subjectID, required this.chapterID});
+  const StudyMaterials({super.key, required this.subjectID, required this.chapterID});
 
-  String subjectID;
-  String chapterID;
+ final String subjectID;
+ final String chapterID;
 
   @override
   Widget build(BuildContext context) {

@@ -41,7 +41,7 @@ class DujoLoginScren extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
                 GoogleMonstserratWidgets(
-                  text: ' VidyaVeechi',
+                  text: ' DuJo',
                   fontsize: 25,
                   color: Colors.black,
                   fontWeight: FontWeight.bold,

@@ -7,12 +7,12 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AllStudentsListScreen extends StatelessWidget {
-  String schooilID;
-  String classID;
-  String examName;
-  String batchId;
-  String teacherId;
-  AllStudentsListScreen(
+ final String schooilID;
+ final String classID;
+ final String examName;
+ final String batchId;
+ final String teacherId;
+  const AllStudentsListScreen(
       {required this.schooilID,
       required this.classID,
       required this.examName,

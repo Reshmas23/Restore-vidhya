@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 class TeacherGetSubjectController extends GetxController {
     RxString  teacherSubject =  ''.obs;
   Future<void> getBatchYearId() async {
+    // ignore: unused_local_variable
     var vari = await FirebaseFirestore.instance
         .collection("SchoolListCollection")
         .doc(UserCredentialsController.schoolId)

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../model/teacher_model/attentence/attendance_model.dart';
 
+// ignore: must_be_immutable
 class DatedAttendenceListViewScreen extends StatelessWidget {
   var schoolId;
   var classID;

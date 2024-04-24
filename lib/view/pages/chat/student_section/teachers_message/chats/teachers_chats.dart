@@ -12,10 +12,10 @@ import '../../../../../../controllers/chat_controller/student_controller/student
 import '../../../../../constant/sizes/constant.dart';
 
 class TeachersChatsScreen extends StatefulWidget {
-  String teacherDocID;
-  String teacherName;
+ final String teacherDocID;
+ final String teacherName;
 
-  TeachersChatsScreen(
+  const TeachersChatsScreen(
       {required this.teacherDocID, required this.teacherName, super.key});
 
   @override

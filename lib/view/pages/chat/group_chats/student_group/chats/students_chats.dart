@@ -12,10 +12,10 @@ import '../../../../../../controllers/group_chat_controller/group_StudentsTeache
 import '../../group_chat.dart';
 
 class StudentsGroupChats extends StatefulWidget {
-  String groupName;
-  String groupId;
+ final String groupName;
+ final String groupId;
 
-  StudentsGroupChats(
+  const StudentsGroupChats(
       {required this.groupId, required this.groupName, super.key});
 
   @override

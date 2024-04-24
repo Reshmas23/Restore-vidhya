@@ -9,10 +9,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'all_student_list.dart';
 
 class CreateExamNameScreen extends StatelessWidget {
-  String schooilID;
-  String classID;
-  String teacherId;
-  String batchId;
+ final String schooilID;
+ final String classID;
+ final String teacherId;
+ final String batchId;
   final TextEditingController _examNameController = TextEditingController();
   CreateExamNameScreen(
       {required this.schooilID,

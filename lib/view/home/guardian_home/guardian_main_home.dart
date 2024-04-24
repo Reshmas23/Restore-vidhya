@@ -51,6 +51,7 @@ class _GuardianMainHomeScreenState extends State<GuardianMainHomeScreen> {
       onWillPop: () => onbackbuttonpressed(context),
       child: Scaffold(
         appBar: AppBar(
+          flexibleSpace: GuardianAppColor(),
           foregroundColor: cWhite,
           title: SizedBox(
             // color: cred,
@@ -58,12 +59,12 @@ class _GuardianMainHomeScreenState extends State<GuardianMainHomeScreen> {
             width: 115.w,
             child: Center(
                 child: Image.asset(
-              'assets/images/vidyaveechi.png',
-              color: Colors.white,
+              'assets/images/dujoo-removebg.png',
+            //  color: Colors.white,
               fit: BoxFit.cover,
             )),
           ),
-          backgroundColor: adminePrimayColor,
+        //  backgroundColor: adminePrimayColor,
         ),
         body: pages[_page],
         bottomNavigationBar: Container(
@@ -125,5 +126,28 @@ class _GuardianMainHomeScreenState extends State<GuardianMainHomeScreen> {
         ),
       ),
     );
+  }
+}
+
+class GuardianAppColor extends StatelessWidget {
+  const GuardianAppColor({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+            decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      //   Color.fromARGB(255, 6, 152, 225),
+                      //  Color.fromARGB(255, 15, 73, 208),
+                         Color.fromARGB(255, 6, 71, 157),
+                   Color.fromARGB(255, 5, 85, 222)
+                    ],
+                    end: Alignment.topLeft,
+                    begin: Alignment.bottomRight,
+                  ),
+                 // color: cgraident.withOpacity(0.5),
+            )
+                );
   }
 }

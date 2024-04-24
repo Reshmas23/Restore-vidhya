@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dujo_kerala_application/view/colors/colors.dart';
 import 'package:dujo_kerala_application/view/pages/chat/parent_section/search/search_teachers.dart';
 import 'package:dujo_kerala_application/view/pages/chat/parent_section/teacher_messages/teachers_messages.dart';
-import 'package:dujo_kerala_application/view/pages/chat/student_section/search/search_teachers.dart';
 import 'package:dujo_kerala_application/view/widgets/appbar_color/appbar_clr.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

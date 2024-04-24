@@ -83,7 +83,7 @@ class TeachersSignUpPage extends StatelessWidget {
                           width: 100.w,
                           imagePath: 'assets/images/leptonlogo.png'),
                       GoogleMonstserratWidgets(
-                        text: 'Lepton VidyaVeechi',
+                        text: 'Lepton DuJo',
                         fontsize: 20,
                         fontWeight: FontWeight.w500,
                       ),

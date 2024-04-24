@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 
 import '../../../../../controllers/userCredentials/user_credentials.dart';
 
+// ignore: must_be_immutable
 class ViewGD extends StatefulWidget {
   ViewGD({super.key, required this.studentID});
 

@@ -42,8 +42,8 @@ class TeachersSignUpScreen extends StatelessWidget {
           width: 115.w,
           child: Center(
               child: Image.asset(
-            'assets/images/vidyaveechi.png',
-            color: Colors.white,
+            'assets/images/dujoo-removebg.png',
+           // color: Colors.white,
             fit: BoxFit.cover,
           )),
         ),

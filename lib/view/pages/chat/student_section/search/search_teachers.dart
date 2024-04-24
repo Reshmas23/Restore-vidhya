@@ -152,6 +152,7 @@ class SearchTeachers extends SearchDelegate {
                       children: [
                         GestureDetector(
                             onTap: () {
+                              // ignore: unused_local_variable
                               final data = buildSuggestionList[index];
 
                               // _showlert(context, data);

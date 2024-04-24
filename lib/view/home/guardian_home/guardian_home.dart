@@ -83,6 +83,7 @@ class _GuardianHomeScreen2State extends State<GuardianHomeScreen2> {
   }
 
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     String studentName = '';
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(

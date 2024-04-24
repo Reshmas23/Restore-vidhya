@@ -162,9 +162,9 @@ class _SSState extends State<SS> with SingleTickerProviderStateMixin {
 }
 
 class DayWidget extends StatelessWidget {
-  DayWidget({super.key, required this.dayName});
+  const DayWidget({super.key, required this.dayName});
 
-  String dayName;
+ final String dayName;
   Color colorCheck(col) {
     if (col == 'Color(0x00fcfcfc)') {
       return Colors.amber;
@@ -219,6 +219,7 @@ class DayWidget extends StatelessWidget {
                   itemBuilder: (context, index) {
                     Color coll = colorCheck(
                         snapshot.data!.docs[index]['period']['color']);
+                    // ignore: unused_local_variable
                     String coco = snapshot.data!.docs[index]['period']['color']
                         .toString()
                         .substring(
@@ -318,15 +319,15 @@ class ColorParser {
 }
 
 class PeriodShowingWidget extends StatelessWidget {
-  PeriodShowingWidget(
+  const PeriodShowingWidget(
       {super.key,
       required this.periodList,
       required this.dayName,
       required this.teacherList});
 
   final List<String> periodList;
-  List<String> teacherList;
-  String dayName;
+ final List<String> teacherList;
+ final String dayName;
 
   @override
   Widget build(BuildContext context) {

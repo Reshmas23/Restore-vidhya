@@ -6,6 +6,7 @@ import 'package:dujo_kerala_application/widgets/Iconbackbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 
+// ignore: must_be_immutable
 class ViewGuardianDetails extends StatefulWidget {
   ViewGuardianDetails(
       {super.key, required this.studentID, required this.documentSnapshot});

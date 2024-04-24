@@ -13,7 +13,7 @@ class SubjectChat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
+  //  var screenSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,

@@ -78,7 +78,7 @@ class SplashScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                       GoogleMonstserratWidgets(
-                        text: ' VidyaVeechi',
+                        text: ' DuJo',
                         fontsize: 25,
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -274,7 +274,7 @@ Future<bool> onbackbuttonpressed(BuildContext context) async {
         content: const SingleChildScrollView(
           child: ListBody(
             children: <Widget>[
-              Text('Do you want to exit from Lepton VidyaVeechi ?')
+              Text('Do you want to exit from Lepton DuJo ?')
             ],
           ),
         ),

@@ -2,14 +2,11 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dujo_kerala_application/controllers/userCredentials/user_credentials.dart';
-import 'package:dujo_kerala_application/main.dart';
 import 'package:dujo_kerala_application/model/student_model/student_model.dart';
 import 'package:dujo_kerala_application/view/pages/login/dujo_login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import '../../view/pages/login/users_login_screen/student login/student_login.dart';
 
 class UserLoginCheckController extends GetxController{
   String? schoolIDVal; 

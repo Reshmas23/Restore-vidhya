@@ -12,11 +12,11 @@ import '../../../constant/sizes/sizes.dart';
 import '../../../widgets/fonts/google_poppins.dart';
 
 class UsersExamTimeTableViewScreen extends StatelessWidget {
-  String collectionName;
-  String date;
-  String examID;
-  String examName;
-  UsersExamTimeTableViewScreen(
+ final String collectionName;
+ final String date;
+ final String examID;
+ final String examName;
+  const UsersExamTimeTableViewScreen(
       {required this.collectionName,
       required this.date,
       required this.examID,

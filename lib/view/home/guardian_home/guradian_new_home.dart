@@ -321,7 +321,7 @@ class _GuardianHomeScreenState extends State<GuardianHomeScreen> {
                       padding: EdgeInsets.only(left: 30, top: 180),
                       child: CircleAvatar(
                         maxRadius: 40,
-                        backgroundImage: AssetImage('assets/images/AI.jpg'),
+                        backgroundImage: AssetImage('assets/images/students.png'),
                       ),
                     ),
                   ],

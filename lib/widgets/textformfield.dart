@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 
 class TextFormFieldWidget extends StatelessWidget {
-  TextFormFieldWidget({
+  const TextFormFieldWidget({
     super.key,
     this.labelText,
     this.hintText,
@@ -13,9 +13,9 @@ class TextFormFieldWidget extends StatelessWidget {
     this.function,
   });
   final TextEditingController? textEditingController;
-  String? hintText;
-  String? labelText;
-  String? Function(String? fieldContent)? function;
+ final String? hintText;
+ final String? labelText;
+ final String? Function(String? fieldContent)? function;
 
   @override
   Widget build(BuildContext context) {

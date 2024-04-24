@@ -11,10 +11,9 @@ import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 import 'package:get/get.dart';
 
 import '../../../../controllers/group_chat_controller/group_StudentsTeacher_chat_controller.dart';
-import '../teacher_section/parents_message/parents_messages.dart';
 
 class GroupChatScreenForTeachers extends StatelessWidget {
-  TeacherGroupChatController teacherGroupChatController =
+ final TeacherGroupChatController teacherGroupChatController =
       Get.put(TeacherGroupChatController());
   GroupChatScreenForTeachers({super.key});
 

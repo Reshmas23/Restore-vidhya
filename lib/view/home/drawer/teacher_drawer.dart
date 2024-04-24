@@ -21,7 +21,7 @@ import '../class_teacher_HOme/class_teacher_mainhome.dart';
 import '../student_home/time_table/ss.dart';
 
 class TeacherHeaderDrawer extends StatelessWidget {
-  UserLogOutController userLogOutController = Get.put(UserLogOutController());
+ final UserLogOutController userLogOutController = Get.put(UserLogOutController());
   TeacherHeaderDrawer({Key? key}) : super(key: key);
 
   @override
@@ -50,7 +50,7 @@ class TeacherHeaderDrawer extends StatelessWidget {
             ),
           ),
           Text(
-            "Lepton VidyaVeechi",
+            "Lepton DuJo",
             style: GoogleFonts.montserrat(
                 color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),
           ),

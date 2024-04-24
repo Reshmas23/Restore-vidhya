@@ -5,8 +5,8 @@ import '../view/constant/sizes/constant.dart';
 import '../view/home/sample/under_maintance.dart';
 
 class CircleAvatharImageSelectionWidget extends StatelessWidget {
-  ImageProvider<Object>? backgroundImage;
-  CircleAvatharImageSelectionWidget({
+ final ImageProvider<Object>? backgroundImage;
+  const CircleAvatharImageSelectionWidget({
     this.backgroundImage,
     super.key,
   });

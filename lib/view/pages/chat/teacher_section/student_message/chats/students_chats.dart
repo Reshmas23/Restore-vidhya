@@ -13,10 +13,10 @@ import '../../../../../../controllers/chat_controller/teacher_controller/teacher
 import '../../../../../constant/sizes/constant.dart';
 
 class StudentsChatsScreen extends StatefulWidget {
-  String studentDocID;
-  String studentName;
+ final String studentDocID;
+ final String studentName;
 
-  StudentsChatsScreen(
+  const StudentsChatsScreen(
       {required this.studentDocID, required this.studentName, super.key});
 
   @override

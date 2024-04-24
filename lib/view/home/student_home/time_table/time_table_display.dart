@@ -78,7 +78,7 @@ class _StudentShowTimeTableState extends State<StudentShowTimeTable> {
 
   @override
   Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
+   // var screenSize = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
           backgroundColor: adminePrimayColor,

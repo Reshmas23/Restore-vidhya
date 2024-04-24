@@ -144,6 +144,7 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
     multipileStudentsController.checkalreadyexist(
         FirebaseAuth.instance.currentUser!.uid, parentAuth);
 
+    // ignore: unused_local_variable
     String studentName = '';
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(

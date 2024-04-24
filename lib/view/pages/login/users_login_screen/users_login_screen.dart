@@ -34,15 +34,15 @@ class UsersLoginScreen extends StatelessWidget {
           width: 115.w,
           child: Center(
               child: Image.asset(
-            'assets/images/vidyaveechi.png',
-            color: Colors.white,
+            'assets/images/dujoo-removebg.png',
+           // color: Colors.white,
             fit: BoxFit.cover,
           )),
         ),
         // ContainerImage(
         //     height: ScreenUtil().setHeight(28),
         //     width: ScreenUtil().setWidth(90),
-        //     imagePath: 'assets/images/vidyaveechi.png'),
+        //     imagePath: 'assets/images/dujoo-removebg.png'),
         backgroundColor: adminePrimayColor,
       ),
       body: SafeArea(
@@ -86,6 +86,8 @@ class UsersLoginScreen extends StatelessWidget {
                               }
                             },
                             child: Container(
+                              // height: 120,
+                              // width: double.infinity,
                               margin: EdgeInsets.only(
                                   bottom: w / 10,
                                   left: w / 20,
@@ -158,7 +160,7 @@ getWhichTeacher(int teacherPageIndex, int classTeacherPageIndex) {
   Get.bottomSheet(Container(
     color: Colors.white,
     height: 200.h,
-    width: 200.w,
+    width: 500.w,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [

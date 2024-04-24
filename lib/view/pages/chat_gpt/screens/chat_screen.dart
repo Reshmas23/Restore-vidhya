@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
@@ -7,7 +5,6 @@ import 'package:provider/provider.dart';
 import '../providers/chats_provider.dart';
 import '../providers/models_provider.dart';
 import '../widgets/chat_widget.dart';
-import '../widgets/text_widget.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -42,6 +39,7 @@ class _ChatScreenState extends State<ChatScreen> {
   // List<ChatModel> chatList = [];
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final modelsProvider = Provider.of<ModelsProvider>(context);
     final chatProvider = Provider.of<ChatProvider>(context);
     return Scaffold(

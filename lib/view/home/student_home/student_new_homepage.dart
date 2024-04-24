@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:adaptive_ui_layout/flutter_responsive_layout.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dujo_kerala_application/controllers/userCredentials/user_credentials.dart';
@@ -24,7 +23,6 @@ import 'package:dujo_kerala_application/view/widgets/fonts/google_salsa.dart';
 import 'package:dujo_kerala_application/view/widgets/icon/icon_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../pages/chat/student_section/student_chat_screen.dart';
 
 class NewStdHomePage extends StatelessWidget {
@@ -55,8 +53,7 @@ class NewStdHomePage extends StatelessWidget {
 
       UsersSelectExamLevelScreen(
           classId: UserCredentialsController.classId!,
-          studentID:
-              UserCredentialsController.studentModel!.docid), ////// exam result
+          studentID: UserCredentialsController.studentModel!.docid), ////// exam result
 
       NoticePage(), //Notice
       const EventList(), //Events
